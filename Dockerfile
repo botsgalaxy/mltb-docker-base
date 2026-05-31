@@ -46,6 +46,7 @@ RUN apt-get install -y --no-install-recommends \
         python3 \
         python3-dev \
         python3-pip \
+        python3-venv \
         aria2 \
         qbittorrent-nox \
         sabnzbdplus \
