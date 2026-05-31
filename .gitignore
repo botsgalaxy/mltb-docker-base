@@ -1,0 +1,11 @@
+# local build / scratch
+*.tar
+*.log
+*.tmp
+.env
+
+# editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
