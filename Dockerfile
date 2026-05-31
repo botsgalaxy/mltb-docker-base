@@ -56,9 +56,15 @@ RUN apt-get install -y --no-install-recommends \
         ffmpeg \
         mediainfo \
         libmediainfo0v5 \
+        libmagic1t64 \
         7zip \
         7zip-rar \
-        default-jre-headless \
+        atomicparsley \
+        cabextract \
+        jq \
+        pv \
+        zstd \
+        default-jre \
         git \
         curl && \
     rm -rf /var/lib/apt/lists/*

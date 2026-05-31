@@ -30,9 +30,14 @@ binaries only. The bot's own source is layered on top by the consumer
 | ffmpeg | 8.0.1 | Ubuntu archive |
 | MediaInfo | 26.01 | Ubuntu archive |
 | 7zip (+ rar) | 26.00 | Ubuntu archive |
-| OpenJDK (for JDownloader) | 25 | Ubuntu archive |
+| OpenJDK (for JDownloader) | 25 (`default-jre`) | Ubuntu archive |
 | rclone | 1.74.2 | official static release |
 | JDownloader | latest | installer.jdownloader.org |
+
+Also included so the bot's own layer builds and runs on top: `gcc`/`g++` and
+`python3-venv` (the bot creates a venv and compiles C extensions such as
+`tgcrypto`), `libmagic1` (for `python-magic`), and helper tools
+`AtomicParsley`, `cabextract`, `jq`, `pv`, `zstd`.
 
 Python dependencies are installed from the Ubuntu archive as `python3-*` /
 `apprise` packages rather than via pip — matching upstream and avoiding the
